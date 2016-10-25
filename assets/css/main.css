@@ -1,1 +1,6 @@
 /* custom styles */
+
+body {
+  background-color: #006272;
+  font-family: "Noto Sans", sans-serif;
+}
