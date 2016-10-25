@@ -4,3 +4,9 @@ body {
   background-color: #006272;
   font-family: "Noto Sans", sans-serif;
 }
+
+header {
+  height: 400px;
+  background: url("/Users/dkingdon/wdi/dkingdon.github.io/assets/imgs/moabCliff.jpg") no-repeat center center;
+  background-size: cover;
+  }
