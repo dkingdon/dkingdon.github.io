@@ -25,8 +25,17 @@ html, body {
 }
 
 .main h1 {
-  font-size: 60px;
+  font-size: 70px;
   text-shadow: 0 3px 4px rgba(0,0,0,.4);
+  margin-left: 40px;
+  margin-bottom: 0;
+}
+
+.main p {
+  font-size: 20px;
+  margin-left: 40px;
+  margin-top: 0;
+  padding-top: 0;
 }
 
 /* nav */
@@ -39,6 +48,7 @@ html, body {
 
 .supporting h2 {
   font-size: 25px;
+  margin-top: 10px;
 }
 
 .supporting p {
@@ -49,6 +59,6 @@ html, body {
   vertical-align: middle;
 }
 
-/*.col-md-4 {
+.col-md-4 {
     width: 33.33333333%;
-}*/
+}

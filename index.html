@@ -13,14 +13,13 @@
   <link rel="stylesheet" type="text/css" href="vendor/css/normalize.css">
   <link rel="stylesheet" type="text/css" href="assets/css/main.css">
   <!-- scripts -->
-  <script type="text/javascript" src="assets/js/app.js"></script>
+  <script defer type="text/javascript" src="assets/js/app.js"></script>
   <!-- favicon -->
   <link rel="icon" type="image/png" href="assets/imgs/favicon.png">
   <!-- fonts -->
   <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
   <!-- bootstrap links -->
-  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous"> --> -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 </head>
 <body>
@@ -33,8 +32,8 @@
         <source src="/Users/dkingdon/wdi/dkingdon.github.io/assets/imgs/greenDesign.mp4">
       </video>
       <div class="content">
-        <h1>Dan Kingdon</h1>
-        <p>Front End Web Developer</p>
+        <h1 id="delayedTextH1" style="visibility:hidden">Dan Kingdon</h1>
+        <p id="delayedTextP" style="visibility:hidden">Frontend Web Developer</p>
       </div>
     </div>
 </header>
@@ -61,6 +60,5 @@
         </div>
       </div>
     </div>
-
 </body>
 </html>
