@@ -1,1 +1,55 @@
 /* custom styles */
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+.main {
+  position: relative;
+  color: #fff;
+  /*text-align: center;*/
+}
+
+.main video {
+  width: 100%;
+}
+
+.main .content {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  left: 10;
+  right: 0;
+  margin: 0 auto;
+
+}
+
+.main h1 {
+  font-size: 60px;
+  text-shadow: 0 3px 4px rgba(0,0,0,.4);
+}
+
+/* nav */
+.supporting {
+  margin-top: 40px;
+  text-shadow: 0 2px 3px rgba(0,0,0,.4);
+  color: #7FFF00;
+  text-align: center;
+  background-color: black;
+}
+
+.supporting h2 {
+  font-size: 25px;
+}
+
+.supporting p {
+  font-size: 16px;
+}
+
+.supporting img {
+  vertical-align: middle;
+}
+
+.col-md-4 {
+    width: 33.33333333%;
+}
