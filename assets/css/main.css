@@ -8,6 +8,7 @@ html, body {
 .main {
   position: relative;
   color: #fff;
+  background-color: black;
 }
 
 .main video {
@@ -30,15 +31,10 @@ html, body {
 
 /* nav */
 .supporting {
-  margin-top: 0;
   text-shadow: 0 2px 3px rgba(0,0,0,.4);
   color: #00EE00;
   text-align: center;
   background-color: black;
-}
-
-.row {
-  display: inline-block;
 }
 
 .supporting h2 {
