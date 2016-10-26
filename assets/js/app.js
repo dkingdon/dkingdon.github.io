@@ -16,6 +16,9 @@ var elem=document.getElementById(id);
 setTimeout(function(){elem.style.visibility='visible';},delay*1000)
 }
 window.onload=function(){
-showText('delayedTextH1',8);
-showText('delayedTextP',10);
+showText('delayedTextH1',7);
+showText('delayedTextP',9);
+showText('delayedTextResume',11);
+showText('delayedTextLin',12);
+showText('delayedTextContact',13);
 }
