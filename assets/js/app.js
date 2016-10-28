@@ -19,6 +19,7 @@ window.onload=function(){
 showText('delayedTextH1',7);
 showText('delayedTextP',9);
 showText('delayedTextResume',11);
-showText('delayedTextLin',12);
-showText('delayedTextContact',13);
+showText('delayedTextLin',11.75);
+showText('delayedTextContact',12.5);
+showText('delayedTextGit', 13.25);
 }
