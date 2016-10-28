@@ -20,7 +20,7 @@
   <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
   <!-- bootstrap links -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>
 <body>
   <div id="page-wrapper">
@@ -48,7 +48,9 @@
             <p>Temp text, Temp text, Temp text, Temp text</p>
           </div>
           <div id="delayedTextLin" style="visibility:hidden" class="col-md-3">
-            <a target="_blank" href="https://www.linkedin.com/in/danielkingdon"><img src="http://www.clipartkid.com/images/88/linkedin-icon-black-and-white-trendsnow-website-QVNsOG-clipart.png" height="80" width="80"></a>
+
+    <!-- Need to find a way to override bootstrap's css so that i can change the color of this anchor tag-->
+            <a id="aBootstrap-overide" target="_blank" href="https://www.linkedin.com/in/danielkingdon"><img src="http://www.clipartkid.com/images/88/linkedin-icon-black-and-white-trendsnow-website-QVNsOG-clipart.png" height="80" width="80"></a>
             <h2>LinkedIn</h2>
             <p>Temp text, Temp text, Temp text, Temp text</p>
           </div>
@@ -65,5 +67,20 @@
         </div>
       </div>
     </div>
+
+      <!-- Projects Section -->
+    <div class="project">
+      <div class="projectContainer">
+        <h2>My Work</h2>
+          <ul>
+            <li><a target="_blank" href="https://github.com/dkingdon/problem-set-js-basics">javascript Basics - Problem Set</a></li>
+          </ul>
+      </div>
+
+    </div>
+
+
+
+
 </body>
 </html>
