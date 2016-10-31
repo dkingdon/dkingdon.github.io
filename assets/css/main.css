@@ -54,6 +54,7 @@ html, body {
 
 .supporting p {
   font-size: 16px;
+  color: white;
 }
 
 .supporting img {
@@ -63,15 +64,28 @@ html, body {
 .project {
   color: white;
   background-color: black;
-  margin-top: 0;
+  text-align: center;
 }
 
 .project h2 {
   text-align: center;
-  border-top: 0;
+  margin-top: 0;
+  /*border-top: 3px solid #00EE00;*/
 }
 
-a {
-  font-size: 15px;
-  font-family: Noto sans,
+.projectContainer {
+  margin-left: 35px;
+  margin-right: 35px;
+  margin-bottom: 40px;
+}
+
+.projectBox {
+  border: 1px solid #00EE00;
+  text-align: center;
+  padding: 10px 10px 10px 10px;
+  margin-top: 20px;
+  position: relative;
+  /*margin-left: 30px;
+  margin-right: 30px;*/
+  /*outline: 1px solid white;*/
 }
