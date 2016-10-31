@@ -16,10 +16,11 @@ var elem=document.getElementById(id);
 setTimeout(function(){elem.style.visibility='visible';},delay*1000)
 }
 window.onload=function(){
-showText('delayedTextH1',7);
-showText('delayedTextP',9);
-showText('delayedTextResume',11);
-showText('delayedTextLin',11.75);
-showText('delayedTextContact',12.5);
-showText('delayedTextGit', 13.25);
+showText('delayedTextH1',6)
+showText('delayedTextP',7);
+showText('delayedTextResume',9);
+showText('delayedTextLin',9.75);
+showText('delayedTextContact',10.5);
+showText('delayedTextGit', 11.25);
+// showText('delayedTextProjects', 12);
 }
