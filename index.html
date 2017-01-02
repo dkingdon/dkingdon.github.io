@@ -1,159 +1,209 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Dan Kingdon</title>
-  <!-- meta -->
-  <meta charset="utf-8" />
-  <meta name="description" content="Personal Site">
-  <meta name="author" content="GA Student">
-  <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-  <!-- mobile -->
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <!-- styles -->
-  <link rel="stylesheet" type="text/css" href="vendor/css/normalize.css">
-  <link rel="stylesheet" type="text/css" href="assets/css/main.css">
-  <!-- scripts -->
-  <script defer type="text/javascript" src="assets/js/app.js"></script>
-  <!-- favicon -->
-  <link rel="icon" type="image/png" href="assets/imgs/favicon.png">
-  <!-- fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
-  <!-- bootstrap links -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Daniel Kingdon's Portfolio">
+  <meta name="author" content="Daniel Kingdon">
+  <title> Daniel Kingdon </title>
+
+  <link rel="icon" href="images/favicon.ico" />
+
+  <!-- Styles  -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="styles/styles.css">
+  <script src="https://use.typekit.net/xmp0mst.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Corben" rel="stylesheet">
+
+  <!-- Scripts -->
+  <script>try{Typekit.load();}catch(e){}</script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.11/angular.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.11/angular-route.min.js"></script>
+  <script type="text/javascript" src="https://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.12.0.min.js"></script>
+  <script src="js/angular-smooth-scroll.min.js"></script>
+
+  <script type="text/javascript" src="js/app.js"></script>
 </head>
-<body>
-  <div id="page-wrapper">
+<body ng-app="PortfolioApp" ng-controller="MuseumController" id="top">
 
-    <!-- Header Video -->
-<header>
-    <div class="main">
-      <video autoplay muted>
-        <source src="https://player.vimeo.com/external/180183305.hd.mp4?s=c0da9653439076f44f6496b788af478bfe8cff8f&amp;profile_id=174&amp;oauth2_token_id=57447761">
-      </video>
-      <div class="content">
-        <h1 id="delayedTextH1" style="visibility:hidden">Dan Kingdon</h1>
-        <p id="delayedTextP" style="visibility:hidden">Full Stack Web Developer</p>
+  <nav data-my-navscroll ng-class="{min:boolChangeClass}">
+      <span class="mobile-menu" ng-click="isCollapsed = !isCollapsed">MENU</span>
+      <div class="links collapse navbar-collapse" collapse="isCollapsed">
+        <ul>
+          <li><a ng-click="collapseMenu()" scroll-to="top">home</a></li>
+          <li><a ng-click="collapseMenu()" scroll-to="gallery">projects</a></li>
+          <li><a ng-click="collapseMenu()" scroll-to="about">about</a></li>
+          <li><a ng-click="collapseMenu()" scroll-to="contact">contact</a></li>
+        </ul>
       </div>
-    </div>
-</header>
+  </nav>
 
-    <!-- Nav done differently-->
-    <div class="supporting">
-      <div class="container">
-        <div class="row">
-          <div id="delayedTextResume" style="visibility:hidden" class="col-xs-12 col-sm-6 col-md-3">
-            <a target="_blank" href="#"><img src="assets/imgs/resumeIcon.svg" height="80" width="80"></a>
-            <h2>Resume</h2>
-            <p>Download a copy of my most recent resume</p>
-          </div>
-          <div id="delayedTextLin" style="visibility:hidden" class="col-xs-12 col-sm-6 col-md-3">
-            <a id="aBootstrap-overide" target="_blank" href="https://www.linkedin.com/in/danielkingdon"><img src="http://www.clipartkid.com/images/88/linkedin-icon-black-and-white-trendsnow-website-QVNsOG-clipart.png" height="80" width="80"></a>
-            <h2>LinkedIn</h2>
-            <p>Connect with me on LinkedIn</p>
-          </div>
-          <div id="delayedTextContact" style="visibility:hidden" class="col-xs-12 col-sm-6 col-md-3">
-            <a target="_blank" href="mailto:daniel.kingdon@gmail.com"><img src="assets/imgs/contact.svg" height="80" width="80"></a>
-            <h2>Contact</h2>
-            <p>Feel free to shoot me an email</p>
-          </div>
-          <div id="delayedTextGit" style="visibility:hidden" class="col-xs-12 col-sm-6 col-md-3">
-            <a target="_blank" href="https://github.com/dkingdon"><img src="http://www.measurementjs.com/icon-images/github-icon.png" height="80" width="80"></a>
-            <h2>Github</h2>
-            <p>Check out my public repos on Github</p>
-          </div>
+  <header>
+    <div class="container">
+      <h1>Daniel Kingdon</h1>
+      <span class="title">Full Stack Web Developer</span>
+    </div>
+  </header>
+
+  <main id="gallery">
+    <section class="exhibit-wrapper">
+      <section class="gallery-wrapper">
+        <div class="container text-center">
+          <span class="site-text" ng-repeat="site in sites" ng-click="getSite($index)">{{site.name}}</span>
+        </div>
+      </section>
+
+      <div class="container" ng-hide="url">
+        <div class="col-md-6 col-md-offset-3 text-center intro-wrapper">
+          <p><span class="glyphicon glyphicon-menu-up"></span></p>
+          <p class="poject-prompt">Select from the projects above</p>
         </div>
       </div>
-    </div>
 
-      <!-- Projects Section -->
-    <div class="project">
-      <div id="delayedTextProjects" class="projectContainer">
-        <h2>My Work</h2>
-        <div class="row">
+      <div class="container display-wrapper" ng-show="url">
+        <div class="col-md-6 col-md-offset-3 size-btn-wrapper">
+          <span ng-click="switchSize('desktop')"><i class="fa fa-desktop"></i></span>
+          <span ng-click="switchSize('tablet-p')"><i class="fa fa-tablet"></i></span>
+          <span ng-click="switchSize('tablet')"><i class="fa fa-tablet hrz"></i></span>
+          <span ng-click="switchSize('mobile-p')"><i class="fa fa-mobile"></i></span>
+          <span ng-click="switchSize('mobile')"><i class="fa fa-mobile hrz"></i></span>
+        </div>
 
-          <div class="col-xs-6 col-sm-3 col-md-4">
-            <div class="projectBox">
-              <h3>Project 1 - Rails</h3>
-              <p>Project 1 Rails refactor</p>
-               <a target="_blank" href="https://github.com/dkingdon/rails_trial_finder">[Link to Repo]</a>
-            </div>
-          </div>
-          <!-- ____________ -->
-          <div class="col-xs-6 col-sm-3 col-md-4">
-            <div class="projectBox">
-              <h3>Bog App</h3>
-              <p>Rails app focusing REST-ful, CRUD Routes</p>
-               <a target="_blank" href="https://github.com/dkingdon/rails_bog_app">[Link to Repo]</a>
-            </div>
-          </div>
-            <div class="col-xs-6 col-sm-3 col-md-4">
-              <div class="projectBox">
-                <h3>Project  1</h3>
-                <p>Pair project focusing on REST-ful, CRUD Routes</p>
-                 <a target="_blank" href="https://github.com/dkingdon/project-01">[Link to Repo]</a>
-                  <a target="_blank" href="https://powerful-gorge-38317.herokuapp.com/">[Link to Site]</a>
-              </div>
-            </div>
-            <div class="col-xs-6 col-sm-3 col-md-4">
-              <div class="projectBox">
-                <h3>Personal API</h3>
-                <p>A full set of REST-ful, CRUD Routes</p>
-                 <a target="_blank" href="https://github.com/dkingdon/express-personal-api">[Link to Repo]</a>
-                  <a target="_blank" href="https://daniel-kingdon.herokuapp.com">[Link to Site]</a>
-              </div>
-            </div>
-            <div class="col-xs-6 col-sm-3 col-md-4">
-              <div class="projectBox">
-                <h3>Express Route Training</h3>
-                <p>Practice using express routes</p>
-                 <a target="_blank" href="https://github.com/sf-wdi-33/express-routes-training">[Link to Repo]</a>
-              </div>
-            </div>
-            <div class="col-xs-6 col-sm-3 col-md-4">
-              <div class="projectBox">
-                <h3>Project 0</h3>
-                <p>Browser based racing game full of awesomeness</p>
-                 <a target="_blank" href="https://github.com/dkingdon/project-0">[Link to Repo]</a>
-              </div>
-            </div>
-            <div class="col-xs-6 col-sm-3 col-md-4">
-              <div class="projectBox">
-                <h3>JS Object Training</h3>
-                <p>Practice working with objects</p>
-                 <a target="_blank" href="https://github.com/dkingdon/js-objects-training">[Link to Repo]</a>
-              </div>
-            </div>
-            <div class="col-xs-6 col-sm-3 col-md-4">
-              <div class="projectBox">
-                <h3>Tic-Tac-Toe</h3>
-                <p>Create a working Tic-Tac-Toe game</p>
-                 <a target="_blank" href="https://github.com/dkingdon/tic-tac-toe">[Link to Repo]</a>
-              </div>
-            </div>
-            <div class="col-xs-6 col-sm-3 col-md-4">
-              <div class="projectBox">
-                <h3>Javascript Functions</h3>
-                <p>Practice using functions</p>
-                 <a target="_blank" href="https://github.com/dkingdon/functions-exercises">[Link to Repo]</a>
-              </div>
-            </div>
-            <div class="col-xs-6 col-sm-3 col-md-4">
-              <div class="projectBox">
-                <h3>DOM Event Lab</h3>
-                <p>Practice DOM manipulation with jquery</p>
-                 <a target="_blank" href="https://github.com/dkingdon/jquery-dom-lab">[Link to Repo]</a>
-              </div>
-            </div>
-            <div class="col-xs-6 col-sm-3 col-md-4">
-              <div class="projectBox">
-                <h3>Javascript Basic</h3>
-                <p>javascript Basics - Problem set</p>
-                 <a target="_blank" href="https://github.com/dkingdon/problem-set-js-basics">[Link to Repo]</a>
-              </div>
-            </div>
-          </div>
+        <div class="display clearfix" ng-class="screen">
+          <!-- <div class="screen"> -->
+            <iframe ng-src="{{url}}" frameborder="0"></iframe>
+          <!-- </div> -->
+        </div>
+
       </div>
-    </div>
+
+      <div class="container static-display-wrapper" ng-show="image">
+        <img ng-src="images/{{image}}" alt="site static image">
+      </div>
+
+      <section class="content-wrapper text-center clearfix" ng-show="desc">
+        <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3">
+          <h3>{{name}}</h3>
+          <a href="{{url}}" target="_blank">website</a> <a href="{{github}}" target="_blank">github</a>
+          <p>{{desc}}</p>
+        </div>
+      </section>
+
+    </section>
+
+     <section id="about" class="about-wrapper">
+      <div class="container">
+        <div class="col-sm-5 col-md-4 summary">
+          <h3>Experience</h3>
+          <p>
+            <span class="role">Web Development Immersive Student</span>
+            <span class="company">General Assembly</span>
+            <span class="date">October 2016 – Present | San Francisco, CA</span>
+          </p>
+
+          <p>
+            <span class="role">Sr. Project Manager / Jira Admin</span>
+            <span class="company">Change.org</span>
+            <span class="date">January 2016 – September 2016 | San Francisco, CA</span>
+          </p>
+
+          <p>
+            <span class="role">Sr. Project Manager / QA Manager / Jira Admin</span>
+            <span class="company">Change.org</span>
+            <span class="date">January 2015 – December 2015 | San Francisco, CA</span>
+          </p>
+
+          <p>
+            <span class="role">Project Manager</span>
+            <span class="company">Big Fish</span>
+            <span class="date">September 2014 – January 2015 | Oakland, CA</span>
+          </p>
+
+          <p>
+            <span class="role">Sr. Project Manager</span>
+            <span class="company">Zynga</span>
+            <span class="date">February 2011 – August 2014 | San Francisco, CA</span>
+          </p>
+
+          <p>
+            <span class="role">Project Manager</span>
+            <span class="company">Zynga</span>
+            <span class="date">June 2010 – January 2011 | San Francisco, CA</span>
+          </p>
+
+          <p>
+            <span class="role">Release Manager</span>
+            <span class="company">Zynga</span>
+            <span class="date">January 2010 – June 2010 | San Francisco, CA</span>
+          </p>
+
+          <p>
+            <span class="role">Sr. Lead QA Analyst</span>
+            <span class="company">Zynga</span>
+            <span class="date">October 2008 – January 2010 | San Francisco, CA</span>
+          </p>
+
+          <p>
+            For QA experience between 1998 and 2008, please see my resume or linkedin page.
+          </p>
+
+        </div>
+
+        <div class="col-sm-6 col-sm-offset-1 col-md-7 col-md-offset-1">
+          <h3>Summary</h3>
+          <p><strong>Fullstack Web Developer</strong> – Lorem ipsum dolor sit amet, sit leo, eros justo sit turpis, et dui tellus id, nibh dolor fusce. Ac suscipit, faucibus pede sed nullam curae potenti, est duis diamlorem ac quam ridiculus, malesuada urna suspendisse suspendisse donec pede, amet orci ut ultrices. Aliquam viverra pede, tempor et.</p>
+          <p>Lorem ipsum dolor sit amet, sit leo, eros justo sit turpis, et dui tellus id, nibh dolor fusce. Ac suscipit, faucibus pede sed nullam curae potenti, est duis diamlorem ac quam ridiculus, malesuada urna suspendisse suspendisse donec pede, amet orci ut ultrices. Aliquam viverra pede, tempor et..</p>
+          <p>Lorem ipsum dolor sit amet, sit leo, eros justo sit turpis, et dui tellus id, nibh dolor fusce. Ac suscipit, faucibus pede sed nullam curae potenti, est duis diamlorem ac quam ridiculus, malesuada urna suspendisse suspendisse donec pede, amet orci ut ultrices. Aliquam viverra pede, tempor et.</p>
+          <p>Lorem ipsum dolor sit amet, sit leo, eros justo sit turpis, et dui tellus id, nibh dolor fusce. Ac suscipit, faucibus pede sed nullam curae potenti, est duis diamlorem ac quam ridiculus, malesuada urna suspendisse suspendisse donec pede, amet orci ut ultrices. Aliquam viverra pede, tempor et.</p>
+          <h3>Skills</h3>
+          <ul class="col-sm-4">
+            <li>HTML 5</li>
+            <li>CSS 3</li>
+            <li>Javascript</li>
+            <li>jQuery</li>
+            <li>Node.js</li>
+            <li>Angular.js</li>
+            <li>AJAX</li>
+            <li>Angular.js</li>
+          </ul>
+          <ul class="col-sm-4">
+            <li>Ruby</li>
+            <li>Ruby on Rails</li>
+            <li>Express</li>
+            <li>Bootstrap</li>
+            <li>Express</li>
+            <li>MongoDB</li>
+            <li>JSON</li>
+            <li>Mongoose</li>
+          </ul>
+          <ul class="col-sm-4">
+            <li>MySQL</li>
+            <li>Github</li>
+            <li>APIs</li>
+            <li>Jira Admin</li>
+            <li>Agile Framework</li>
+            <li>bcript</li>
+
+          </ul>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer id="contact">
+    <section class="container contact-wrapper">
+      <div class="col-sm-6 col-sm-offset-6 col-md-7 col-md-offset-5">
+        <ul class="social">
+          <li><a href="mailto:daniel.kingdon@gmail.com"><i class="fa fa-envelope-o"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/danielkingdon" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+          <li><a href="https://github.com/dkingdon" target="_blank"><i class="fa fa-github"></i></a></li>
+          <li><a href="./files/resume.pdf" target="_blank"><i class="fa fa-file-text-o"></i></a></li>
+        </ul>
+      </div>
+    </section>
+  </footer>
 </body>
 </html>
