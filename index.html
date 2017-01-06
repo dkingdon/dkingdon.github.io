@@ -7,7 +7,7 @@
   <meta name="author" content="Daniel Kingdon">
   <title> Daniel Kingdon </title>
 
-  <link rel="icon" href="images/favicon.ico" />
+  <link rel="icon" href="images/dk_icon.png" />
 
   <!-- Styles  -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -50,9 +50,11 @@
     <section class="exhibit-wrapper">
       <section class="gallery-wrapper">
         <div class="container text-center">
-          <span class="site-text" ng-repeat="site in sites" ng-click="getSite($index)">{{site.name}}</span>
+          <span class="site-text" ng-repeat="site in sites" ng-click="getSite($index)"><button type="button" class="btn btn-default project-btn">{{site.name}}</button></span>
         </div>
       </section>
+
+
 
       <div class="container" ng-hide="url">
         <div class="col-md-6 col-md-offset-3 text-center intro-wrapper">
@@ -144,10 +146,6 @@
             <span class="date">October 2008 – January 2010 | San Francisco, CA</span>
           </p>
 
-          <p>
-            For QA experience between 1998 and 2008, please see my resume or linkedin page.
-          </p>
-
         </div>
 
         <div class="col-sm-6 col-sm-offset-1 col-md-7 col-md-offset-1">
@@ -162,27 +160,25 @@
             <li>HTML 5</li>
             <li>CSS 3</li>
             <li>Javascript</li>
-            <li>jQuery</li>
             <li>Node.js</li>
             <li>Angular.js</li>
-            <li>AJAX</li>
             <li>APIs</li>
+            <li>JSON</li>
           </ul>
           <ul class="col-sm-4">
             <li>Ruby</li>
             <li>Ruby on Rails</li>
             <li>Bootstrap</li>
             <li>Express</li>
-            <li>MongoDB</li>
-            <li>JSON</li>
             <li>Mongoose</li>
+            <li>MongoDB</li>
+            <li>MySQL</li>
           </ul>
           <ul class="col-sm-4">
-            <li>MySQL</li>
             <li>Github</li>
             <li>Jira Admin</li>
             <li>Agile Framework</li>
-            <li>bcript</li>
+            <li>bcrypt</li>
             <li>PostgreSQL</li>
             <li>Rspec</li>
           </ul>

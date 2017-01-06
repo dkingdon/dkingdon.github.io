@@ -122,6 +122,18 @@ header {
   color: white;
 }
 
+.btn-default {
+  background: transparent;
+  color: white;
+  font-size: 25px;
+}
+.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open>.dropdown-toggle.btn-default {
+  background-color: #525252;
+  color: white;
+  border-color: white;
+
+}
+
 .site-text {
   color: white;
   font-size: 25px;
