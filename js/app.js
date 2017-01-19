@@ -26,11 +26,11 @@ app.controller('MuseumController', ['$scope','$sce', function($scope,$sce){
     desc: 'Application designed to help mountain bike riders new to the SF Bay area find trails to ride based on their skill level. Utilizing Google Maps API. Fully CRUD-able Express API adhering to RESTful Routes standards, using AJAX, jQuery, and  Handlebars for templating. All supported with a MongoDB database using Mongoose. Go to: /trails/admin to create and delete'},
 
     /* Need to figure out how to get rails app working */
-    {name:'Paregrination',
-    url: $sce.trustAsResourceUrl('https://peaceful-sierra-36805.herokuapp.com/'),
-    github: 'https://github.com/yasuper8/peregrination',
-    image: '../images/trail-finder.png',
-    desc: 'A Ruby on Rails app designed to empower people from all over the world to leave comments and suggestions for travelers on a city by city basis. Travelers can then see where they could visit and where they should avoid. Ruby on rails, postgresql, crypt, using bootstrap, and hosted on heroku.'}
+    // {name:'Paregrination',
+    // url: $sce.trustAsResourceUrl('https://peaceful-sierra-36805.herokuapp.com/'),
+    // github: 'https://github.com/yasuper8/peregrination',
+    // image: '../images/trail-finder.png',
+    // desc: 'A Ruby on Rails app designed to empower people from all over the world to leave comments and suggestions for travelers on a city by city basis. Travelers can then see where they could visit and where they should avoid. Ruby on rails, postgresql, crypt, using bootstrap, and hosted on heroku.'}
 
   ]
 
