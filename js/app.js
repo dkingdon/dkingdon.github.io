@@ -42,10 +42,10 @@ app.controller('MuseumController', ['$scope','$sce', function($scope,$sce){
     $scope.desc = $scope.sites[i].desc;
     $scope.image = $scope.sites[i].image;
       if (i === 0) {
-        $('.mobile-view').attr('style', 'visibility:hidden');
+        $('.fa-mobile').attr('style', 'visibility:hidden');
       }
       else {
-        $('.mobile-view').attr('style', 'visibility:visible');
+        $('.fa-mobile').attr('style', 'visibility:visible');
       }
   };
 
