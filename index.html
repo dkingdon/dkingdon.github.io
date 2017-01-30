@@ -21,6 +21,7 @@
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.11/angular.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.11/angular-route.min.js"></script>
   <script type="text/javascript" src="https://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.12.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
   <script src="js/angular-smooth-scroll.min.js"></script>
 
   <script type="text/javascript" src="js/app.js"></script>
@@ -57,7 +58,7 @@
 
 
       <div class="container" ng-hide="url">
-        <div class="col-md-6 col-md-offset-3 text-center intro-wrapper">
+        <div class="col-sm-6 col-sm-offset-3 text-center intro-wrapper">
           <p><span class="glyphicon glyphicon-menu-up"></span></p>
           <p class="poject-prompt">Select from the projects above</p>
         </div>
@@ -68,8 +69,9 @@
           <span ng-click="switchSize('desktop')"><i class="fa fa-desktop"></i></span>
           <span ng-click="switchSize('tablet-p')"><i class="fa fa-tablet"></i></span>
           <span ng-click="switchSize('tablet')"><i class="fa fa-tablet hrz"></i></span>
+          <span class="mobile-view" style="visibility:visible">
           <span ng-click="switchSize('mobile-p')"><i class="fa fa-mobile"></i></span>
-          <span ng-click="switchSize('mobile')"><i class="fa fa-mobile hrz"></i></span>
+          <span ng-click="switchSize('mobile')"><i class="fa fa-mobile hrz"></i></span></span>
         </div>
 
         <div class="display clearfix" ng-class="screen">
@@ -172,7 +174,6 @@
             <li>Express</li>
             <li>Mongoose</li>
             <li>MongoDB</li>
-            <li>MySQL</li>
           </ul>
           <ul class="col-sm-4">
             <li>Github</li>
