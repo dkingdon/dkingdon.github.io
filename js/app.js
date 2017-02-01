@@ -20,13 +20,13 @@ app.controller('MuseumController', ['$scope','$sce', function($scope,$sce){
     desc: 'Growth Academy is an early learning application targeted towards Pre-K and Kindergarten children teaching and reinforcing a variety of skills.  Technologies: MEAN stack application utilizing Bootstrap styling'},
 
     {name:'Game Break',
-    url: $sce.trustAsResourceUrl('https://peaceful-retreat-83581.herokuapp.com/'),
+    url: $sce.trustAsResourceUrl('https://game-break.herokuapp.com/'),
     github: 'https://github.com/dkingdon/game_break',
     image: '../images/game-break.png',
     desc: 'Game Break is a game hub consisting of three mini games. Single page Angular app with a bootstrap style responsive design meant to be played on both web or mobile platforms.  Technologies: AJAX, jQuery, Angular, Bootstrap, Express, MongoDB, Node '},
 
     {name:'Trail Finder',
-    url: $sce.trustAsResourceUrl('https://cryptic-springs-83612.herokuapp.com/'),
+    url: $sce.trustAsResourceUrl('https://ba-trail-finder.herokuapp.com/'),
     github: 'https://github.com/dkingdon/project-01',
     image: '../images/trail-finder.png',
     desc: 'Application designed to help mountain bike riders new to the SF Bay area find trails to ride based on their skill level. Utilizing Google Maps API. Fully CRUD-able Express API adhering to RESTful Routes standards, using AJAX, jQuery, and  Handlebars for templating. All supported with a MongoDB database using Mongoose. Go to: /trails/admin to create and delete'},
